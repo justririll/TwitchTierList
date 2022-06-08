@@ -41,7 +41,7 @@
       <div id="Channel">Название канала: </div>
       <br>
       <input id="channelInput" type="text" v-model="Channel"> <br>
-      <Start class="Start" @click="if (this.Channel != '') ($router.push(`/play?maxplayers=${this.maxPlayers}&channel=${this.Channel}`)); " />
+      <Start class="Start" @click="if (this.Channel != '') ($router.push(`/play?maxplayers=${this.maxPlayers}&channel=${this.Channel.toLowerCase()}`)); " />
       <!-- <Desc /> -->
       <About />
     </center>
